@@ -1,0 +1,22 @@
+# data/nlu.yml
+
+version: "3.1"
+
+nlu:
+  - intent: greet
+    examples: |
+      - Hola
+      - Buenos días
+      - Buenas tardes
+
+  - intent: goodbye
+    examples: |
+      - Adiós
+      - Hasta luego
+      - Chao
+
+  - intent: inform_name
+    examples: |
+      - Mi nombre es Juan
+      - Me llamo María
+      - Soy Pedro

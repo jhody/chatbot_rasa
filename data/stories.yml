@@ -1,0 +1,18 @@
+# data/stories.yml
+
+version: "3.1"
+
+stories:
+- story: greet and inform name
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: inform_name
+    entities:
+      - name: Juan
+  - action: utter_name_response
+
+- story: say goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye

@@ -1,0 +1,32 @@
+# domain.yml
+
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - inform_name
+
+entities:
+  - name
+
+slots:
+  name:
+    type: text
+    mappings:
+      - type: from_text
+
+responses:
+  utter_greet:
+    - text: "¡Hola! ¿Cómo puedo ayudarte hoy?"
+  utter_goodbye:
+    - text: "¡Hasta luego! Que tengas un buen día."
+  utter_ask_name:
+    - text: "¿Cómo te llamas?"
+  utter_name_response:
+    - text: "¡Encantado de conocerte, {name}!"
+  utter_iamabot:
+    - text: "¡Hola! Soy un bot."
+
+actions:
+  - action_provide_name
